@@ -1,0 +1,55 @@
+
+
+
+
+.inner4 {
+  margin: auto;
+ 
+ padding: 15px 50px 50px;
+	
+}
+
+/* mak images fill their container*/
+.innerimg {
+ 
+	width: 120px;
+	height: 100px;
+}
+.innerimg:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* CSS Grid*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+	
+	animation-direction:normal;
+}
+
+/* Media Query for changing grid on bigger screens*/
+
+/* Bigger than Phones(tablet) */
+@media only screen and (min-width: 750px) {
+	
+
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+	
+}
+@media only screen and (max-width: 600px) {
+ .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Bigger than Phones(laptop / desktop) */
+@media only screen and (min-width: 970px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

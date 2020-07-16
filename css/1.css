@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.something {
+
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.arrow-right {
+  background-color:#6474E5;
+  box-shadow: #6474E5;
+  height: 100px;
+  left: -50px;
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-bottom: 80px solid transparent;
+
+	border-left: 80px solid #444;
+  margin-left: 0;
+  position: absolute;
+  top: 0;
+}
+
+/*.arrow-right::after {
+  background-color: transparent;
+  box-shadow: 0 6px 6px 1px black;
+  content: "";
+  display: block;
+  height: 0px;
+  left: -102px;
+  position: absolute;
+  top: 39px;
+  width: 115px;
+
+  
+  -webkit-transform: rotate(-45deg);
+}*/
+
+.arrow-right span {
+  color: #f5f5f5;
+  font-family: sans-serif;
+  font-size: 1.005em;
+  left: 28px;
+  top: 78px;
+  position: absolute;
+  width: 80px;
+}
